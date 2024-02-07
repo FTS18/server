@@ -9,6 +9,9 @@ app.use(express.json());
 
 app.get('/api/download', async (req, res) => {
     try {
+        // Add a message to indicate that the server is active
+        res.send('Server is active!');
+
         const { URL, title, format } = req.query;
         const stream = ytdl(URL);
 
