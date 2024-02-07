@@ -3,7 +3,10 @@
   "builds": [
     { "src": "server.js", "use": "@vercel/node" }
   ],
+  "functions": {
+    "api": { "handler": "./server.js" }
+  },
   "routes": [
-    { "src": "/api/download", "dest": "./server.js" }
+    { "src": "/(.*)", "dest": "/server.js" }
   ]
 }
