@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/api/download', async (req, res) => {
+app.get('/', async (req, res) => {
     try {
         // Add a message to indicate that the server is active
         res.send('Server is active!');
