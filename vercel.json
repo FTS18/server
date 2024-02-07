@@ -1,8 +1,10 @@
 {
-  "rewrites": [
-    { "source": "/server/*", "destination": "/server.js" }
-  ],
-  "builds": [
-    { "src": "server.js", "use": "@vercel/node" }
+  "functions": {
+    "api": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "routes": [
+    { "src": "/api/download", "dest": "/api/download" }
   ]
 }
