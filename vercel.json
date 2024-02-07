@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api": {
+      "runtime": "nodejs20.x",
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    { "handle": "api", "src": "/server/*" }
+  ],
+  "builds": [
+    { "src": "server.js", "use": "@vercel/node" }
+  ]
+}
