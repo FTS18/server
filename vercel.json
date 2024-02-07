@@ -6,6 +6,6 @@
     }
   },
   "routes": [
-    { "handle": "api", "src": "/api/*" }
+    { "src": "/api/*", "dest": "./server.js" }
   ]
 }
