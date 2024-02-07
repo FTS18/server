@@ -1,7 +1,7 @@
 {
   "functions": {
     "api": {
-      "runtime": "nodejs20.11.0"
+      "runtime": "nodejs@20.11.0"
     }
   },
   "routes": [
