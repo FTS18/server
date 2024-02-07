@@ -7,12 +7,10 @@ const corsOptions = {
   methods: ['GET', 'POST'],      // Allow only specified HTTP methods
 };
 
-app.use(cors(corsOptions));
-
 const app = express();
 
+app.use(cors());
 app.use(express.json());
-
 app.get('/server/download', async (req, res) => {
     try {
         var URL = req.query.URL;
