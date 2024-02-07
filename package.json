@@ -4,10 +4,12 @@
   "description": "Has links to all projects I've worked on",
   "main": "server.js",
   "type": "module",
-  "scripts": {                                                                             
+  "scripts": {
     "start": "node server.js",
-    "build": "npm install","vercel-build": "node server.js"
-  },"engines": {
+    "build": "npm install",
+    "vercel-build": "npm run build"
+  },
+  "engines": {
     "node": "20.x"
   },
   "author": "Ananay",
