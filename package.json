@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.1",
+  "description": "Has links to all projects I've worked on",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {                                                                             
+    "start": "node server.js",
+    "build": "npm install"
+  },
+  "author": "Ananay",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "ytdl-core": "^4.11.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fts18/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "bugs": {
+    "url": "https://github.com/fts18/portfolio/issues"
+  },
+  "homepage": "https://github.com/fts18/portfolio#readme"
+}
