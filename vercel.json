@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/server.js": {
-      "runtime": "nodejs@20.11.0"
+      "runtime": "nodejs20.x"
     }
   },
   "routes": [
