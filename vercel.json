@@ -3,11 +3,6 @@
   "builds": [
     { "src": "server.js", "use": "@vercel/node" }
   ],
-  "functions": {
-    "api": {
-      "runtime": "nodejs14.x"
-    }
-  },
   "routes": [
     { "src": "/api/download", "dest": "./server.js" }
   ]
