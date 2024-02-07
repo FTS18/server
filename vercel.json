@@ -5,9 +5,6 @@
     }
   },
   "routes": [
-    { "handle": "api", "src": "/server/*" }
-  ],
-  "builds": [
-    { "src": "server.js", "use": "@vercel/node" }
+    { "src": "/server/*", "dest": "/server.js" }
   ]
 }
