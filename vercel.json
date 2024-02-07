@@ -6,8 +6,8 @@
       "maxDuration": 10
     }
   },
-  "routes": [
-    { "handle": "api", "src": "/server/*" }
+  "rewrites": [
+    { "source": "/server/*", "destination": "/server.js" }
   ],
   "builds": [
     { "src": "server.js", "use": "@vercel/node" }
